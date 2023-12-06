@@ -1,7 +1,16 @@
+body {
+    margin: 0;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
 }
 
 .navlink a {
@@ -23,6 +32,7 @@ nav {
 main {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin: 20px;
 }
 
 article {
@@ -74,4 +84,66 @@ header div {
     border-radius: 50%;
     font-size: 25px;
     text-transform: uppercase;
+}
+
+#chi-siamo img {
+    width: 360px;
+}
+
+.clear {
+    clear: both;
+}
+
+#progetti {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#progetti article {
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+.project-header {
+    position: relative;
+}
+
+.project-header div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    background-color: rgb(255 217 0 / 70%);
+    width: 60%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.project-header img {
+    width: 100%;
+}
+
+.project-main img {
+    width: 70%;
+}
+
+.project-footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.project-footer img {
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.project-footer p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
 }
